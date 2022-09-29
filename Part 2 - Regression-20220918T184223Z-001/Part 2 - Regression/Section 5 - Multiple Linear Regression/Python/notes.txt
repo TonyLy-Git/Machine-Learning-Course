@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 25 14:19:18 2022
+
+@author: lyt4
+"""
+
+Assumptions of Linear Regression
+1. Linearity
+    The relationship between X and the mean of Y is linear
+2. Homoscedasticity
+    The variance of residual is the same for any value of X
+3. Multivariate Normality
+    Residuals are normally distributed
+4. Independence of Errors
+    There is not a relationship between the residual and the variable
+5. Lack of Multicollinearity
+    Independent variable are not highly correlated with each other
+
+***need to check these assumptions are true***
+
+Dummy Variable
+Profit - R&D Spend - Admin - Marketing - State
+            
+y = b0 + b1x1      + b2x2  + b3x3      + categorical data (create new columns -> dummy variables)
+
+Dummy Variable Trap
+Always omit one dummy variable
+
+Building a Model
+
+5 Models
+1. All-In
+    use all variables
+    reasoning:
+     - prior knowledge (need to use all variables)
+     - preparing Backward Elimination
+     
+2. Backward Elimination - Stepwise Regression
+    Step 1: select a significant level(SL) to stary in the model
+    Step 2: fit the full model with all possible predictors
+    Step 3: consider the predictor with the highest P-value, if P > SL, go to Step 4, else go to FIN
+    Step 4: remove the predictor
+    Step 5: tit the model without this variable
+    
+    FIN: Model is ready
+    
+3. Forward Selection - Stepwise Regression
+    Step 1: select SL
+    Step 2: fit all simple regression model y - xn. Select the one with the lowest P-value
+    Step 3: keep this variable and fit all possible models with one extra predictor added to the one(s) you already have
+    Step 4: consider the predictor with the lowest P-value, if P < SL, go to Step 3, else go to FIN
+    
+    FIN: Model is ready
+    
+4. Bidirectional Elimination - Stepwise Regression (some ppl default stepwise regression with bidirectional elimination)
+    Step 1: select SL 
+    Step 2: perform the next step of Forward Selection (new variables must have P < SLENTER to enter)
+    Step 3: perform all setps of Backward Elimination (old variables must have P < SLSTAY to stay)
+    Step 4: no new variables can enter and no old variables can exit
+    
+    FIN: Model is ready
+    
+5. Score Comparison
+    Step 1: select criterion of goodness of fit
+    Step 2: construct all possible regression models: 2^(n-1) total combinations
+    Step 3: select teh one with the best criterion
+    
+    FIN: Model is ready
+
+    Example: 10 columns means 1023 models
+    
+
