@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr  5 17:44:36 2023
+
+@author: lyt4
+"""
+
+y = b0 + b1*x1 + b2*x1^2 + ... + + bn*x1^n
+
