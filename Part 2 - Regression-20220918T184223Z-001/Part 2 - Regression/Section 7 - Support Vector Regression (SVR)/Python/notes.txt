@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 19 15:33:22 2023
+
+@author: lyt4
+"""
+
+SVR Intuition
+uses an ε (Epsilon) -Insensitive Tube instead of a line 
+Slack variables Ei (above) and Ei* (below) are the points outside of the tube
+
+any point outside the tube is a support vector
+
+additional reading
+Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers
+Ch 4 - Support Vector Regression
+
+Link: https://core.ac.uk/download/pdf/81523322.pdf
+
+FEATURE SCALING NEED TO KNOW
+- don't apply feature scaling to dummy variables resulting from one-hot encoding 
+- don't need to apply feature scaling when dependent variable have binary values because values are already in the right range
+- need to apply feature scaling when dependent variable takes super high values with respects to the other features to put all the features and dependent variable in the same range
+- when splitting data in train and test set, need to apply feature scaling after the split
+
+Kernel Functions
+Def: SVM algorithms use a set of mathematical functions that are defined as the kernel. The function of kernel is to take data as input and transform it into the required form.
+
+Example: Gaussian RBF Kernel
+Link: https://data-flair.training/blogs/svm-kernel-function

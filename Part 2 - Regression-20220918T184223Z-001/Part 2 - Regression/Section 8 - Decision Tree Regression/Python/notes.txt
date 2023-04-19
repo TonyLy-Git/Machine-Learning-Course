@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 19 18:53:32 2023
+
+@author: lyt4
+"""
+
+Decision Tree Intuition
+
+Classification and Regression Tree (CART)
+
+Regression Tree
+
+using two independent variable (x1, x2) to predict third variable (y)
+y is the third dimension
+
+scatterplot would split up into segments (determinded by the regression tree algorithm)
+the tree is created by the splits - example x1 > 40
