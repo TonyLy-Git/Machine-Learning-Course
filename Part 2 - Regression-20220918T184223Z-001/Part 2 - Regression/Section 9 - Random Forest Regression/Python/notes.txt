@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 19 20:37:43 2023
+
+@author: lyt4
+"""
+
+Random Forest Intuition
+
+Random forest is a version of Ensemble Learning
+
+Ensemble Learning - take mult algorithm and put them together 
+
+Step 1: pick at random K data points from training set
+Step 2: build Decision Tree associated to the K data points
+Step 3: choose the number Ntree of trees you want to build and repeat Steps 1 & 2
+Step 4: for a new data point, make each one of your Ntree trees predict the value of Y for the data point in question, and assign the new point the average across all of the predicted Y values
+
+Ensemble algorithms are more stable because any changes within the dataset can heavily impact a single tree compared to a forest of trees
+
