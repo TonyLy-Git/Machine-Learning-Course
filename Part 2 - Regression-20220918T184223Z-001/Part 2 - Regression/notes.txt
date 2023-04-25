@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 24 20:52:14 2023
+
+@author: lyt4
+"""
+
+Ch 130: R-Squared Intuition
+
+R^2 is used to evaluate models
+
+Sum Squares (SS)
+Residual Sum Squares: SSres = SUM(yi - yi(hat))^2
+Total Sum Squares: SStot = SUM(yi -yavg)^2
+
+R^2 = 1 - SSres/SStot
+
+we want to minimize the SS (make is as small as possible)
+in most cases, the SSres is less than the SStot
+
+which means the ratio is less than one
+therefore R^2 is between 0 and 1
+
+the better our model fits the data, the smaller the SSres, the greater the R^2
+
+rule of thumb for R^2 (for our tutorial):
+1.0 = perfect fit (sus)
+~0.9 = very good
+~0.7 = not great
+<0.4 = terrible
+<0.0 = model makes no sense for this data
+
+
+Ch 131: Adjusted R-Squared
+
+Problem: how adding new independent variables affect the R^2 value
+
+Example: we have a linear regression w/ two independent variables and want to add a third 
+SStot does not change because it depends on the y values, not the y-hat values 
+SSres will decrease or stay the same; the problem is that the SSres will never increase as we add more variables 
+
+We use the Ordinary Least Squares to build our models, which aims to minimize SSres
+
+Therefore, the model will keep taking in more variables as it makes the R^2 score higher, but we don't want a lot of variable (bad data)
+
