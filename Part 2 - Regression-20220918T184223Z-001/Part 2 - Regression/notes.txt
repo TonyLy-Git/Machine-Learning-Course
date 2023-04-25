@@ -43,3 +43,11 @@ We use the Ordinary Least Squares to build our models, which aims to minimize SS
 
 Therefore, the model will keep taking in more variables as it makes the R^2 score higher, but we don't want a lot of variable (bad data)
 
+Solution: Adjusted R-Squared
+
+Ajd R^2 = 1 - (1 - R^2) * (n - 1)/(n - k - 1)
+k = number of independent variables
+n = sample size
+
+Adj R^2 penalizes for adding more independent variables
+
