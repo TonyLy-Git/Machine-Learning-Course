@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 27 14:48:44 2023
+
+@author: TLy
+"""
+
+Classification
+a ML technique to identify the category of new observations based on training data
+
+Logistic Regression
+predicts a categorical dependent variable from a number of independent variables
+
+ln(p/1-p) = b0 + b1 * X1 + b2 * X2 + . . . + bn * Xn 
+n = number of independent variables
+
+Maximun Likelihood
