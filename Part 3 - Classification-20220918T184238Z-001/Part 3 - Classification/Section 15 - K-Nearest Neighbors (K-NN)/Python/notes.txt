@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 12 13:02:17 2023
+
+@author: lyt4
+"""
+
+Steps
+1. choose the number, K, of neighbors (common default is 5)
+2. take the K nearest neighbors of the new data point, according to distances (i.e. Euclidean, Manhattan, etc.)
+3. among these K neighbors, count the number of data points in each category 
+4. assign the new data point to the category where you counted the most neighbors
+
+Euclidean Distance
+distance between P1 and P2 = sqrt((x2 - x1)^2 + (y2 - y1)^2)
