@@ -5,3 +5,16 @@ Created on Fri May 12 13:49:08 2023
 @author: lyt4
 """
 
+how SVM searches for the line that separates points into classes?
+the line is searched through the maximum margin
+the line is equidistant from the closes point in each classes
+the closes points are called support vectors - they contribute to the algorithm
+
+maximum margine hyperplane - the line that separates the classes
+positive/negative hyperplane stems from the edge of the maximum margin and is parallel to the maximum marin hyperplane
+generally left of the maximum margin hyperplane is negative and the right is positive
+
+why SVM? 
+in the example of apples and oranges
+predominate ML algorithms looks at the most common type of apples to determine what an apple is
+svm looks the apples that are not the standard apples to determine what an apple looks like

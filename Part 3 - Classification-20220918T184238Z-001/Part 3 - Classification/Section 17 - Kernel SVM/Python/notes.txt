@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun May 14 23:34:53 2023
+
+@author: Tony
+"""
+
+Kernel SVM Intuition
+used when we can't find the boundary with a linear line
+when the data points are non LINEARLY SEPARABLE
+
+A Higher-Dimensional Space
+Steps
+1. create a function based on the data points 
+    ex) f = x - 5
+2. map the function into the next dimensional space 
+    ex) f = (x - 5)^2
+3. project the points onto the new function
+
+4. project the result back into the regulare dimensional space
+
+Catch:
+mapping to a higher dimensional space can be highly compute-intensive
+
+
+The Kernel Trick
